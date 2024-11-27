@@ -1,143 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
-
-    <title>Weather Data Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mer Manahan Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100 text-black font-sans">
+    <div class="max-w-4xl mx-auto p-8 bg-white shadow-lg mt-10">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b pb-4 mb-6">
+            <div>
+                <h1 class="text-4xl font-bold">Mer Arnel Manahan</h1>
+                <p class="text-md text-gray-600">mermanahan@gmail.com</p>
+            </div>
+            <div class="text-right">
+                <p class="text-sm text-gray-500">Columbia, SC</p>
+            </div>
+        </div>
 
-<body>
+        <!-- Skills Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h2>
+            <ul class="list-disc pl-5 space-y-1">
+                <li>Visualzation: Power BI, Tableau, Excel </li>
+                <li>Programming Languages: SQL, Python</li>
+                <li>Databases: SQL Server, Db2, MS Access</li>
+            </ul>
+        </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <!-- Work Experience Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Work Experience</h2>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="https://mmanahan.github.io/index.html">Latitude</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://mmanahan.github.io/LatVsMaxTemp.html">Max Temperature</a>
-                            <a class="dropdown-item" href="https://mmanahan.github.io/LatVsHumidity.html">Humidity</a>
-                            <a class="dropdown-item" href="https://mmanahan.github.io/LatVsClouds.html">Cloudiness</a>
-                            <a class="dropdown-item" href="https://mmanahan.github.io/LatVsWind.html">Wind Speed</a>
-                        </div>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="https://mmanahan.github.io/Comparisons.html">Comparisons <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="https://mmanahan.github.io/Data_Page.html">Data</a>
-                    </li>
-                   
-                    </li>
+            <div class="mb-6">
+                <p class="text-lg font-bold">Software Developer | [Company Name]</p>
+                <p class="text-sm text-gray-600">Jan 2024 - Present</p>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                    <li>Developed and maintained web applications using React.js and Node.js, improving site performance by 30%.</li>
+                    <li>Collaborated with cross-functional teams to design and implement RESTful APIs.</li>
+                    <li>Utilized MySQL and MongoDB to manage and optimize database systems, reducing query times by 15%.</li>
+                    <li>Led the integration of third-party services and APIs, enhancing application functionality.</li>
+                    <li>Conducted code reviews and provided mentorship to junior developers, ensuring code quality and best practices.</li>
+                    <li>Automated deployment processes using Jenkins and Docker, reducing deployment time by 50%.</li>
                 </ul>
             </div>
-        </nav>
-</body>
 
-</html>
-
-    <div class="container">
-        <div class="row" >
-            <div class="col-xs-8 col-md-8">
-            <h1>Summary: Latitude vs. X</h1>
-            <hr>
-            <p>The purpose of this project was to establish familiarity with
-                making API calls using python in order to gather weather data based
-                for specific cities given their latitude and longitude. The API used
-                was OpenWeather API. Calls were made to gather max temperature, humidity, cloudiness
-                and wind speed from 500+ cities. A pandas dataframe was then populated based on the data gathered
-                and analyses were run.
-            </p>
-    
-            <p> Matplotlib was used to show the how proximity to the equator
-                (based on a city's latitude) affects the max temperature, humidity, cloudiness
-                and wind speed.
-            </p>
-            <p>
-                This dashboard provides the visualizations created to provide insight
-                from the source data gathered.
-            </p>
-        </div>
-    
-    
-        <div class="col-xs-4 col-md-4">
-            <h1>
-                Visualizations
-            </h1>
-            <div class="row">
-                <div align="left">
-                    <a href="https://mmanahan.github.io/Lat_vs_Cloudiness.png">
-                        <img src="https://mmanahan.github.io/Lat_vs_Cloudiness.png" alt="Latitude vs Cloudiness" class="img-fluid" class="img-thumbnail"
-                            class="rounded float-left" alt="Responsive image">
-                    </a>
-                    
-                </div>
-               <div align="right">
-                    <a href="https://mmanahan.github.io/Lat_vs_Humidity.png">
-                        <img src="https://mmanahan.github.io/Lat_vs_Humidity.png" alt="Latitude vs Humidity" class="img-fluid" class="img-thumbnail"
-                            class="rounded float-right" alt="Responsive image">
-                    </a>
-                </div>
-        
+            <div class="mb-6">
+                <p class="text-lg font-bold">Software Engineering Intern | [Company Name]</p>
+                <p class="text-sm text-gray-600">Jun 2020 - Aug 2020</p>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                    <li>Assisted in the development of a full-stack web application using Python and Flask, resulting in a 20% increase in user engagement.</li>
+                    <li>Wrote unit and integration tests, achieving 90% code coverage and reducing bugs in production.</li>
+                    <li>Implemented an agile project management system, contributing to the successful delivery of the project within the deadline.</li>
+                    <li>Participated in daily stand-ups, sprint planning, and retrospectives, gaining experience in agile methodologies.</li>
+                </ul>
             </div>
-            <br>
 
-
-            <div class="row">
-                <div align="left">
-                    <a href="https://mmanahan.github.io/Lat_vs_Temp.png">
-                        <img src="https://mmanahan.github.io/Lat_vs_Temp.png" alt="Latitude vs Max Temperature" class="img-fluid" class="img-thumbnail"
-                            class="rounded float-left" alt="Responsive image">
-                    </a>
-                </div>
-                <div align="right">
-                    <a href="https://mmanahan.github.io/Lat_vs_Wind_Speed.png">
-                        <img src="https://mmanahan.github.io/Lat_vs_Wind_Speed.png" alt="Latitude vs Wind Speed" class="img-fluid" class="img-thumbnail"
-                            class="rounded float-right" alt="Responsive image">
-                    </a>
-                </div>
-                
-                
-        
+            <div class="mb-6">
+                <p class="text-lg font-bold">IT Support Technician | [University Name]</p>
+                <p class="text-sm text-gray-600">Aug 2021 - Mar 2022</p>
+                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                    <li>Provided technical support for over 300 students and faculty, resolving 90% of issues on first contact.</li>
+                    <li>Maintained and upgraded software on university computers, ensuring systems were up-to-date and secure.</li>
+                    <li>Created and delivered training sessions on software tools, improving user proficiency and reducing support calls by 25%.</li>
+                    <li>Collaborated with the IT team to roll out new hardware and software solutions across the campus.</li>
+                </ul>
             </div>
-        
-        
-        </div>   
+        </section>
 
-    
+        <!-- Education Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Education</h2>
+            <div class="mb-6">
+                <p class="text-lg font-bold">M.S. Technology Systems Management</p>
+                <p class="text-sm text-gray-600">[University Name], Aug 2022 - Dec 2023</p>
+                <p class="text-sm text-gray-600">Relevant Courses: Software Engineering, Database Systems, Cloud Computing</p>
+                <p class="text-sm text-gray-600">CAA Academic Honor Roll, Scholarship-Athlete, Leadership role in SBU Football Team</p>
+            </div>
+            <div>
+                <p class="text-lg font-bold">B.S. Multidisciplinary Studies with Focus in IT</p>
+                <p class="text-sm text-gray-600">[University Name], Jun 2018 - May 2022</p>
+                <p class="text-sm text-gray-600">Relevant Courses: Computer Science Fundamentals, Data Structures, Web Development</p>
+            </div>
+        </section>
 
-           
-       
+        <!-- Projects Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Projects</h2>
+            <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+                <li><strong>[Project Name]</strong>: Developed a real-time chat application using Node.js, Express, and WebSocket. Implemented authentication with JWT and OAuth.</li>
+                <li><strong>[Project Name]</strong>: Created an e-commerce platform using React.js and MongoDB. Integrated Stripe for payment processing.</li>
+                <li><strong>[Project Name]</strong>: Automated the deployment of a microservices architecture on AWS using Docker and Kubernetes.</li>
+            </ul>
+        </section>
 
+        <!-- Certifications Section -->
+        <section>
+            <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Certifications</h2>
+            <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                <li>AWS Certified Developer – Associate</li>
+                <li>Certified Scrum Developer (CSD)</li>
+                <li>Microsoft Certified: Azure Developer Associate</li>
+            </ul>
+        </section>
     </div>
-   
 
+    <!-- Print Button -->
+    <div class="flex justify-center mt-8 no-print">
+        <button onclick="window.print()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Print / Save as PDF</button>
+    </div>
 </body>
 </html>
